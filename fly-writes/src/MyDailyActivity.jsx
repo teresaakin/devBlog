@@ -5,7 +5,7 @@ const MyDailyActivity = () => {
             what I did today
             </span>
             <div className="flex-1">
-                <p className="text-white text-opacity-80"> coming soon...</p>
+                <p className="text-white text-opacity-80"> locked in, but no proof yet...</p>
             </div>
         </section>
     );

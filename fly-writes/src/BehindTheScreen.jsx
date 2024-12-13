@@ -27,9 +27,9 @@ const BehindTheScreen = () => {
   
             <div className="mt-10">
               <ul className="flex items-start gap-20 text-sm cursor-pointer">
-                <li className="hover:text-sky-300">github</li>
-                <li className="hover:text-sky-300">twitter</li>
-                <li className="hover:text-sky-300">twitch</li>
+                <li className="hover:text-sky-200">github</li>
+                <li className="hover:text-sky-200">twitter</li>
+                <li className="hover:text-sky-200">twitch</li>
               </ul>
             </div>
           </div>
