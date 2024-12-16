@@ -20,6 +20,7 @@ export default {
       },
         colors: {
           grey: '#808080',
+          bright: '#D9E2FF',
         },
     },
   },

@@ -18,7 +18,7 @@ const BehindTheScreen = () => {
           
           <div className="flex-grow">
             <h2 className="font-medium text-lg">
-              hi! I'm Teresa, a designer & engineer.
+              hi! I'm Teresa, I design & code.
             </h2>
             <p className="mt-4">
               Welcome to my blog! I'll share behind the scenes of my projects <br></br> and
@@ -27,9 +27,9 @@ const BehindTheScreen = () => {
   
             <div className="mt-10">
               <ul className="flex items-start gap-20 text-sm cursor-pointer">
-                <li className="hover:text-sky-200">github</li>
-                <li className="hover:text-sky-200">twitter</li>
-                <li className="hover:text-sky-200">twitch</li>
+                <li className="hover:text-bright">[github]</li>
+                <li className="hover:text-bright">[twitter]</li>
+                <li className="hover:text-bright">[twitch]</li>
               </ul>
             </div>
           </div>
