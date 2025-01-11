@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 const BlogPostList = () => {
     return (
-        <section className="relative max-w-screen-lg mx-auto p-8 sm:p-8 my-8 border-2 custom-border">
+        <section className="w-full relative max-w-screen-lg p-8 sm:p-8 border-2 custom-border sm:px-8 py-8">
             <span className="absolute -top-3 left-4 sm:left-6 px-2 font-mono text-grey bg-black">
             my posts
             </span>
