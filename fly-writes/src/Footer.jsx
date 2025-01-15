@@ -8,7 +8,7 @@
 
 
 const Footer = () => (
-  <footer className="flex items-center justify-center max-w-screen-lg border-2 border-red-600">
+  <footer className="flex items-center justify-center max-w-screen-lg">
     <p className="text-white opacity-50 text-xs" >&copy; Fly Engineering — {new Date().getFullYear()}</p>
   </footer>
 );
