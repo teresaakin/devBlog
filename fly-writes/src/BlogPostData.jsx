@@ -1,4 +1,5 @@
 // this file contains all the blog post data like the h1, h2, h3, but not the body text 
+// needed to build I guess
 
 export const blogPosts = [
   { title: "[1] Hello World", 
