@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { blogPosts } from "../BlogPostData";
-import Footer from "../footer";
+import Footer from "../Footer";
 
 // this contains all the blog post data for each post (title, subheading, body etc.)
 
