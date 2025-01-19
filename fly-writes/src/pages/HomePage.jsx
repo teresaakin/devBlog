@@ -2,7 +2,7 @@ import React from "react";
 import BehindTheScreen from "../BehindTheScreen";
 import BlogPostList from "../BlogPostList";
 import MyDailyActivity from "../MyDailyActivity";
-import Footer from "../footer";
+import Footer from "../Footer";
 
 const Home = () => {
   return (
