@@ -22,6 +22,9 @@ export default {
           grey: '#808080',
           bright: '#D9E2FF',
         },
+        screens: {
+          'lg': '1352px',
+        },
     },
   },
   plugins: [],

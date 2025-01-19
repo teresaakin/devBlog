@@ -23,6 +23,8 @@ const BlogPostEntries = () => {
     // </div>
 
     <div className="relative min-h-screen w-full">
+
+      
       {/* Back button container - absolutely positioned */}
       <div className="absolute lg:fixed left-4 top-8 lg:left-8 lg:mt-20 lg:ml-28">
         {/* this link links us back to the home page when we click the back button */}
