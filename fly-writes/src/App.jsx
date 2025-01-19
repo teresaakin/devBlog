@@ -2,6 +2,7 @@ import HomePage from "./pages/HomePage";
 import BlogPostEntries from "./pages/BlogPostEntries";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+
 function App() {
   return (
     <Router>
