@@ -16,7 +16,6 @@ const BlogPostEntries = () => {
   // find the blog post that matches the slug using the find method?
   const blogPost = blogPosts.find((post) => post.slug === slug);
 
-
   return (
     // <div>
     //           <h1> { blogPost.title } </h1>
@@ -28,7 +27,9 @@ const BlogPostEntries = () => {
       <div className="absolute lg:fixed left-4 top-8 lg:left-8 lg:mt-20 lg:ml-28">
         {/* this link links us back to the home page when we click the back button */}
         <Link to="/">
-          <button className="h-12 px-4 border-2 custom-border hover:bg-white/15 transition-all duration-200 ease-out">Back</button>
+          <button className="h-12 px-4 border-2 custom-border hover:bg-white/15 transition-all duration-200 ease-out">
+            Back
+          </button>
         </Link>
       </div>
       {/* Main content container */}
@@ -51,7 +52,40 @@ const BlogPostEntries = () => {
 
             <section className="relative w-full border-2 custom-border p-6 md:p-8">
               <article>
-                <p className="whitespace-normal break-words">{blogPost.body}</p>
+                {/* <p className="whitespace-normal break-words">{blogPost.body}</p> */}
+                <p className="whitespace-normal break-words mb-10 indent-10">
+                  I started this blog to: document my journey, practice my
+                  writing skills, and grow more confident in allowing myself to
+                  be seen. Creating a space where I can practice my writing,
+                  keep track of my progress, and yap about my projects seemed
+                  like a fun thing to do this new year!
+                </p>
+
+                <p className="whitespace-normal break-words mb-10 indent-10">
+                  I played with the idea of having a blog years ago! I had a
+                  Tumblr where I’d post a lot of art, fashion, and music
+                  content, but that’s been inactive for a while now.
+                </p>
+
+                <p className="whitespace-normal break-words mb-10 indent-10">
+                  I always enjoyed tuning into behind the scenes content. From
+                  rehearsals, fashion shows, studio sessions, etc. I loved
+                  learning the stories and ideas behind creative concepts.
+                </p>
+
+                <p className="whitespace-normal break-words mb-16 indent-10">
+                  Now that school’s out the way, I feel like I’m in a space in
+                  my life right now where I have the freedom to explore a
+                  variety of interests and find my path. I actually have a
+                  really exciting passion project launching soon! It’s lowkey
+                  one of my childhood dreams come true. This current chapter of
+                  my life is quite scary honestly, but I’m learning to be
+                  patient and enjoy the ride.
+                </p>
+
+                <p className="whitespace-normal break-words">
+                  Thank you for reading!
+                </p>
               </article>
             </section>
             <Footer />
