@@ -23,7 +23,7 @@ export default {
           bright: '#D9E2FF',
         },
         screens: {
-          'lg': '1352px',
+          'lg': '1370px',
         },
     },
   },
