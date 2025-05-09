@@ -14,6 +14,7 @@ const BlogPostEntries = () => {
   // gonna find a better way to optimize this later
 
   // find the blog post that matches the slug using the find method?
+  // blogPost.title comes from here...it's finding it from blogPosts data (the component)
   const blogPost = blogPosts.find((post) => post.slug === slug);
 
   return (
@@ -23,8 +24,6 @@ const BlogPostEntries = () => {
     // </div>
 
     <div className="relative min-h-screen w-full">
-
-      
       {/* Back button container - absolutely positioned */}
       <div className="absolute lg:fixed left-4 top-8 lg:left-8 lg:mt-20 lg:ml-28">
         {/* this link links us back to the home page when we click the back button */}
@@ -54,7 +53,46 @@ const BlogPostEntries = () => {
 
             <section className="relative w-full border-2 custom-border p-6 md:p-8">
               <article>
-                {/* <p className="whitespace-normal break-words">{blogPost.body}</p> */}
+                {blogPost.paragraphs.map((entry, index) => {
+                  if (entry.type === "heading") {
+                    return (
+                      <h2 key={index} className="text-xl font-semibold mt-10 mb-4">
+                        {entry.content}
+                      </h2>
+                    );
+                  }
+
+                  return (
+                    <p
+                      key={index}
+                      className={`whitespace-normal break-words mb-6 ${
+                        entry.type === "paragraph" ? "indent-10" : ""
+                      }`}
+                    >
+                      {entry.content}
+                    </p>
+                  );
+                })}
+                {/* {blogPost.paragraphs.map((entry, index) => {
+                  if (entry.type === "heading") {
+                    return (
+                      <h2 key={index} className="text-xl font-semibold mt-8">
+                        {entry.content}
+                      </h2>
+                    );
+                  } else {
+                    return (
+                      <p
+                        key={index}
+                        className="whitespace-normal break-words indent-10"
+                      >
+                        {entry.content}
+                      </p>
+                    );
+                  }
+                })} */}
+
+                {/* <p className="whitespace-normal break-words">{blogPost.body}</p>
                 <p className="whitespace-normal break-words mb-10 indent-10">
                   I started this blog to: document my journey, practice my
                   writing skills, and grow more confident in allowing myself to
@@ -87,7 +125,7 @@ const BlogPostEntries = () => {
 
                 <p className="whitespace-normal break-words">
                   Thank you for reading!
-                </p>
+                </p>  */}
               </article>
             </section>
             <Footer />
